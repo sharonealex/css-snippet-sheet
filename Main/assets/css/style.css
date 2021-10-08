@@ -75,7 +75,6 @@ footer {
   color: var(--heliotrope);
   /* outline is like border, but on the outside of the box instead of inside */
   outline: 2px dashed var(--gin);
-  border: 2px solid yellow;
   transition: all 0.5s ease-in-out;
 }
 
