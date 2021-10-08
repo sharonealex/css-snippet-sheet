@@ -25,8 +25,8 @@ body {
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   /* font-size: 1.75rem; */
   /* line-height: 1.5; */
-  /* color: var(--gin); */
-  /* background-color: var(--outer-space); */
+  color: var(--gin);
+  background-color: var(--outer-space);
 }
 
 h1,
@@ -79,21 +79,27 @@ code {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 90px;;
   /* width: 96%; this was for mobile screen*/
   /* width: 75%; */
-  /* margin: 0 auto; */
+  margin: 0 auto;
   /* padding: 2.5rem; */
   /* text-align: center; */
 }
 
 header h1.page-title {
-  /* padding: 1rem 1.2rem; */
+  padding: 1rem 1.2rem;
   /* font-size: 4.5rem; */
 }
 
 main {
   /* width: 96%; */
-  /* margin: 2rem auto; */
+  margin: 2rem auto;
+  display: flex;
+  flex: 1;
 }
 
 footer {
@@ -103,9 +109,9 @@ footer {
 
 /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
 .row {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: row; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   /* margin-left: -1.5rem; */
   /* margin-right: -1.5rem; */
 }
