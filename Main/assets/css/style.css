@@ -196,25 +196,38 @@ footer {
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
   /* on tablets, set columns to only be 50% of the width and not grow */
-  /* .card-column {
+  .card-column {
     flex: 0 0 50%;
     max-width: 50%;
-  } */
+  }
 
   /* select the last child to grow to full width if it has space to grow */
-  /* .card-column:last-child {
+  .card-column:last-child {
     flex-grow: 1;
-  } */
+  } 
 }
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-  /* header {
+   header {
     width: 75%;
-  }
+  } 
 
   .card-column {
     flex: 0 0 33.333%;
     max-width: 33.333%;
-  } */
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  } 
 }
