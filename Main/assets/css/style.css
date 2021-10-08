@@ -8,8 +8,8 @@
 
 /* set content highlight color and background */
 ::selection {
-  /* background-color: var(--bright-turquoise);
-  color: var(--outer-space); */
+  background-color: var(--bright-turquoise);
+  color: var(--outer-space);
 }
 
 html {
@@ -184,13 +184,13 @@ footer {
     rgba(232, 102, 236, 0.3) 0%,
     rgba(232, 102, 236, 0.6) 100%
    );
-  /* display: flex; */
-  /* align-items: center; */
+  /* display: flex;
+  align-items: center; */
 }
 
 /* on <pre> click, select all contents so the code is highlighted */
 .code-card pre:active {
-  /* user-select: all; */
+  user-select: all;
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
