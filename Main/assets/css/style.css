@@ -129,7 +129,7 @@ footer {
   padding: 1.5rem;
   /* when the screen resizes, make it so our columns don't jump in size */
   /* transition: flex-basis 500ms linear; */
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 /* make each code card a flexbox column to align and justify content within it */
@@ -167,23 +167,23 @@ footer {
 }
 
 /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-.code-card .code-block {
-  /* flex-grow: 1; */
+.code-block {
+  flex-grow: 1;
 }
 
 .code-card pre {
   /* set styles to make it so code wraps in <pre> instead of overflowing */
-  /* white-space: pre-wrap; */
-  /* overflow: auto; */
-  /* tab-size: 4; */
-  /* padding: 1.2rem 1rem; */
-  /* color: var(--gin); */
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--gin);
   /* border-radius: 8px; */
   /* use linear-gradient() function to create a fading background  */
-  /* background-image: linear-gradient( */
-    /* rgba(232, 102, 236, 0.3) 0%, */
-    /* rgba(232, 102, 236, 0.6) 100% */
-  /* ); */
+  background-image: linear-gradient( 
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+   );
   /* display: flex; */
   /* align-items: center; */
 }
